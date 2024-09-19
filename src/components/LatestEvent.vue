@@ -40,10 +40,10 @@ const data = reactive([
       <img src="@/assets/cat1.png" alt="" />
     </div> -->
 
-    <div class="news-container flex flex-col mt-40">
+    <div class="news-container flex flex-col mt-40 gap-4">
       <div
         v-for="(item, index) in data"
-        class="news-wrapper flex justify-center gap-6 max-w-[758px] mx-auto relative before:content-[''] before:rounded-full before:w-5 before:h-5 before:bg-black after:content-[''] after:absolute after:left-[10px] after:bg-black after:h-full after:w-[2px]"
+        class="news-wrapper flex justify-center gap-6 max-w-[758px] mx-auto relative before:content-[''] before:rounded-full before:w-5 before:h-5 before:bg-black after:content-[''] after:absolute after:left-[10px] after:bg-black after:h-screen after:w-[2px]"
       >
         <div class="left">
           <img class="rounded-[12px]" :src="item.imgUrl" alt="news1" />

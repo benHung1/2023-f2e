@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  /* background: #72cef5; */
+}
+
+@layer components {
+  .btn-black {
+    @apply py-1 px-[22px] bg-black text-primeBlue2 font-bold rounded-[50px];
+  }
+
+  .text-title-green {
+    @apply text-[#A8C400];
+  }
+
+  .text-content-green {
+    @apply text-[#d1fa31];
+  }
+}

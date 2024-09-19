@@ -1,27 +1,34 @@
-<script setup lang="ts"></script>
+<script setup></script>
 
 <template>
-  <header>
-    <img src="@/assets/logo-01.png" alt="logo" srcset="" />
-    <img src="@/assets/hambuger.png" alt="hambuger" srcset="" />
+  <header class="flex items-center justify-around bg-primeBlue3 pt-8">
+    <img
+      src="@/assets/catLogo.png"
+      alt="logo"
+      srcset=""
+      class="bg-primeBlue3 cursor-pointer"
+    />
+    <nav>
+      <ul class="flex gap-12 font-bold">
+        <li class="flex gap-3 items-center cursor-pointer">
+          <img src="@/assets/pawBtn.png" alt="" />
+          最新活動
+        </li>
+        <li class="flex gap-3 items-center cursor-pointer">
+          <img src="@/assets/pawBtn.png" alt="" />
+          政策議題
+        </li>
+        <li class="flex gap-3 items-center cursor-pointer">
+          <img src="@/assets/pawBtn.png" alt="" />
+          小額捐贈
+        </li>
+        <li class="flex gap-3 items-center cursor-pointer">
+          <img src="@/assets/pawBtn.png" alt="" />
+          服務信箱
+        </li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <div>
-      <button class="mt-10 mb-10">捐錢捐錢</button>
-      <ul class="mt-20">
-        <li>候選主張</li>
-        <li>最新活動</li>
-        <li>政策議題</li>
-        <li>服務信箱</li>
-      </ul>
-
-      <ul>
-        <li>fackbook</li>
-        <li>instagram</li>
-        <li>youtube</li>
-      </ul>
-    </div>
-  </nav>
 </template>
 
 <style></style>

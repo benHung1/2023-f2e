@@ -36,14 +36,14 @@ const data = reactive([
   <section class="mt-16 mb-40 relative">
     <img class="m-auto" src="@/assets/title1.png" alt="title" />
 
-    <!-- <div class="">
-      <img src="@/assets/cat1.png" alt="" />
-    </div> -->
+    <div class="max-w-[758px] mx-auto">
+      <img class="-ml-[135px] mb-3" src="@/assets/cat1.png" alt="cat1" />
+    </div>
 
-    <div class="news-container flex flex-col mt-40 gap-4">
+    <div class="news-container flex flex-col gap-4">
       <div
-        v-for="(item, index) in data"
-        class="news-wrapper flex justify-center gap-6 max-w-[758px] mx-auto relative before:content-[''] before:rounded-full before:w-5 before:h-5 before:bg-black after:content-[''] after:absolute after:left-[10px] after:bg-black after:h-screen after:w-[2px]"
+        v-for="item in data"
+        class="news-wrapper flex justify-center gap-6 max-w-[758px] mx-auto relative before:content-[''] before:rounded-full before:w-5 before:h-5 before:bg-black after:content-[''] after:absolute after:left-[10px] after:bg-black after:first-of-type:h-[230%] after:w-[2px]"
       >
         <div class="left">
           <img class="rounded-[12px]" :src="item.imgUrl" alt="news1" />

@@ -1,8 +1,36 @@
+import { transform } from "typescript";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        fade: {
+          "0%": {
+            transform: "translateY(200%)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
+        fly: {
+          "0%, 100%": {
+            transform: "tramslateY(50%)",
+          },
+
+          "50%": {
+            transform: "translateY(20%)",
+          },
+        },
+      },
+      animation: {
+        fade: "fade .5s ease-in-out ",
+        fly: "fly 3s ease-in-out infinite",
+      },
+      screens: {
+        pc: "1440px",
+      },
       fontSize: {
         clamp: "clamp(80px, 18vw, 260px)",
       },

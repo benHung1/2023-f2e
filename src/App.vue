@@ -5,6 +5,7 @@ import LatestEvent from "./components/LatestEvent.vue";
 import PolicyIssues from "./components/PolicyIssues.vue";
 import Donated from "./components/Donated.vue";
 import Mail from "./components/Mail.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Mail from "./components/Mail.vue";
   <PolicyIssues />
   <Donated />
   <Mail />
+  <Footer />
 </template>
 
 <style></style>

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from "vue";
+import { ref, watch, defineExpose } from "vue";
 
 const isIntro = ref(false);
 
@@ -9,7 +9,7 @@ const handleIsIntro = () => {
 </script>
 
 <template>
-  <section class="bg-primeBlue3 relative pt-48" v-if="!isIntro">
+  <section id="candidate" class="bg-primeBlue3 relative pt-48" v-if="!isIntro">
     <div class="flex items-center relative px-40">
       <div class="left">
         <img src="@/assets/banner-361text.png" alt="text" srcset="" />
@@ -34,7 +34,7 @@ const handleIsIntro = () => {
 
   <section class="bg-primeBlue3 pt-16" v-if="isIntro">
     <img class="m-auto animate-fade" src="@/assets/title.png" alt="" />
-    <div class="flex px-40 mt-32 items-center pc:relative">
+    <div class="flex px-40 mt-32 items-center pc:relative 2xl:justify-around">
       <div class="px-5 py-8 bg-primeBlue max-w-[437px] rounded-[18px]">
         <h3 class="text-2xl font-bold flex justify-between items-center mb-8">
           <strong class="text-5xl">喵立翰</strong> MiAO LI-HAN

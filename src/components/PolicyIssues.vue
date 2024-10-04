@@ -65,24 +65,32 @@ const data = reactive([
 </script>
 
 <template>
-  <img class="mx-auto" src="@/assets/policy.png" alt="policy" srcset="" />
-
   <section
-    class="policy-container flex justify-center items-center gap-8 mb-10"
+    id="policyIssues"
+    class="policy-container flex flex-col justify-center items-center"
   >
-    <div
-      v-for="item in data"
-      class="policy-wrapper max-w-[350px] flex flex-col items-center"
-    >
-      <img :src="item.imgUrl" alt="image3" srcset="" />
-      <h2 class="my-3 font-bold text-[28px]" v-html="item.title"></h2>
+    <img
+      class="sec-img mx-auto mb-14"
+      src="@/assets/policy.png"
+      alt="policy"
+      srcset=""
+    />
 
+    <div class="flex gap-8">
       <div
-        class="policy-content bg-primeBlue rounded-[18px] py-6 px-[18px] min-h-[361px]"
+        v-for="item in data"
+        class="policy-wrapper max-w-[350px] flex flex-col items-center"
       >
-        <div v-for="content in item.content" class="mb-4">
-          <h4 class="font-bold text-[20px]">{{ content.title }}</h4>
-          <p>{{ content.content }}</p>
+        <img :src="item.imgUrl" alt="image3" srcset="" />
+        <h2 class="my-3 font-bold text-[28px]" v-html="item.title"></h2>
+
+        <div
+          class="policy-content bg-primeBlue rounded-[18px] py-6 px-[18px] min-h-[361px]"
+        >
+          <div v-for="content in item.content" class="mb-4">
+            <h4 class="font-bold text-[20px]">{{ content.title }}</h4>
+            <p>{{ content.content }}</p>
+          </div>
         </div>
       </div>
     </div>

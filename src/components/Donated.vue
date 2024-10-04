@@ -46,9 +46,11 @@ const handleImg = (index, event) => {
 </script>
 
 <template>
-  <img class="mx-auto mb-14" src="@/assets/Group.png" alt="group" />
-
-  <section class="flex flex-col items-center max-w-[992px] mx-auto">
+  <section
+    id="donated"
+    class="flex flex-col items-center max-w-[992px] mx-auto"
+  >
+    <img class="sec-img mx-auto mb-14" src="@/assets/Group.png" alt="group" />
     <div class="donated-wrapper flex gap-32">
       <div class="left flex flex-col gap-6">
         <div

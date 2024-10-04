@@ -1,9 +1,8 @@
 <script setup></script>
 
 <template>
-  <img class="mx-auto" src="@/assets/mail.png" alt="" srcset="" />
-
-  <section>
+  <section id="mail">
+    <img class="mx-auto sec-img" src="@/assets/mail.png" alt="" srcset="" />
     <p class="text-center font-bold text-xl mt-5 mb-10">
       親愛的鄉親，每位市民的意見是我們社區前進的原動力。
       <br />分享您的想法，一同為我們的未來打造更美好！

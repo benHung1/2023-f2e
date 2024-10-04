@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { reactive } from "vue";
+<script setup>
+import { reactive, ref, onMounted } from "vue";
 
 import photo1 from "@/assets/photo1.png";
 
@@ -30,11 +30,17 @@ const data = reactive([
       "今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了一場前所未有的「模特兒走秀」！。",
   },
 ]);
+
+const targetElement = ref(null);
+
+defineExpose({
+  targetElement,
+});
 </script>
 
 <template>
-  <section class="mt-16 mb-40 relative">
-    <img class="m-auto" src="@/assets/title1.png" alt="title" />
+  <section ref="targetElement" id="latestEvent" class="pt-16 pb-20 relative">
+    <img class="sec-img mx-auto" src="@/assets/title1.png" alt="title" />
 
     <div class="max-w-[758px] mx-auto">
       <img class="-ml-[135px] mb-3" src="@/assets/cat1.png" alt="cat1" />

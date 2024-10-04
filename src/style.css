@@ -21,6 +21,10 @@ body {
     @apply bg-primeBlue3 transition-all duration-500;
   }
 
+  .sec-img {
+    @apply pt-20;
+  }
+
   .text-title-green {
     @apply text-[#A8C400];
   }
